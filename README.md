@@ -11,6 +11,14 @@
    public class Test {}
    ```
 - 函数规则
+  * 函数注释示例
+      ```
+        /**
+         *  <函数具体使用说明>
+         * @param name <参数说明>
+         */
+         public void test(String name){}
+      ```
   * 函数不能抛出显性异常, 如下错误示范
     ```
       public void test() throw Exception{}
@@ -30,15 +38,6 @@
       System.out.println();
       e.printStackTrace();
     ```
-    
-  
-  ```
-    /**
-     *  <函数具体使用说明>
-     * @param name <参数说明>
-     */
-     public void test(String name){}
-  ```
 - 代码简洁规范
   * controll类禁止处理业务逻辑，遵循函数代码行越少越优原则
   * service业务处理类，尽量保证每个函数代码行数小于100为原则
